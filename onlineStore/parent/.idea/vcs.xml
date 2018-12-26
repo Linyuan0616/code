@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../taotao-common" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../taotao-manager" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../taotao-manager/taotao-manager-mapper" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../taotao-manager/taotao-manager-pojo" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../taotao-manager/taotao-manager-service" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../taotao-manager/taotao-manager-web" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../taotao-parent" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../taotao-portal" vcs="svn" />
+  </component>
+</project>

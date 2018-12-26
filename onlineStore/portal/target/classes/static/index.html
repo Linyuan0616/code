@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>水管家经销商系统</title>
+	<link rel=stylesheet href=css/common.css>
+	<style type=text/css>
+		#login {
+			width: 450px;
+			margin-top: 5%;
+		}
+
+		#loginBtn {
+			width: 50%;
+			max-width: 225px;
+			margin: 50px 0 40px 8%;
+		}
+	</style>
+</head>
+<body>
+<div class=wrap>
+	<div class=bHeaderBox>
+		<div class=bHeader>
+			<h1>水 管 家</h1>
+			<div class=title2>用 户 登 陆</div>
+		</div>
+	</div>
+	<form id=login>
+		<ul>
+			<li>
+				<label for=tel>手机号码</label>
+				<input id=tel type=text required name=telephone>
+			</li>
+			<li>
+				<label for=password>密码</label>
+				<input id=password type=password required name=password>
+			</li>
+		</ul>
+		<input type=button id=loginBtn class=Btn value="登 录">
+	</form>
+</div>
+<script type=text/javascript src="../js/portal/jquery 1.9.1.min.js"></script>
+<script type=text/javascript src=../js/portal/wm_login.js></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>配送管理</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-table.min.css" />
+</head>
+<body>
+<div class="wrap">
+    <div class="bHeaderBox">
+        <div class="bHeader">
+            <h1>水 管 家</h1>
+            <div class="title2">
+                用 户 中 心
+            </div>
+            <div class="ExitBox">
+                <div class="exitText">
+                    退出登录
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainBox">
+        <div id="bNavBox">
+            <ul id="bNav1">
+                <li><a href="../user.html">
+                    <div class="iconfont pic1"></div>
+                    <div class="text">
+                        资料管理
+                    </div></a></li>
+                <li><a href="item.html">
+                    <div class="iconfont pic2"></div>
+                    <div class="text">
+                        商品查看
+                    </div></a></li>
+                <li><a href="order.html">
+                    <div class="iconfont pic3"></div>
+                    <div class="text">
+                        订单管理
+                    </div></a></li>
+                <li class="on"><a href="sending.html" class="on">
+                    <div class="iconfont pic4"></div>
+                    <div class="text">
+                        配送管理
+                    </div></a></li>
+
+            </ul>
+            <div id="bNav2Box">
+                <ul id="bNav2">
+                    <li class="on">我的库存</li>
+                    <li>配送列表</li>
+                </ul>
+            </div>
+        </div>
+        <div id="contentBox">
+            <div class="content">
+                <table id="sDepositTable"></table>
+            </div>
+            <div class="content no">
+                <table id="sSendingTable"></table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="sAddBackBacketModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">配送商品</h4>
+            </div>
+            <div class="modal-body">
+                <form id="sAddBackBacketForm">
+                    <ul style="width: 350px;text-align: left;">
+                        <li><label for="sName">收货人姓名</label> <input id="sName" type="text" required="" name="sBackNum" /></li>
+                        <li><label for="sPhone">手机号码</label> <input id="sPhone" type="text" required="" name="sBackNum" /></li>
+                        <li><label for="sAddress">配送地址</label> <input id="sAddress" type="text" required="" name="sBackNum" /></li>
+                        <li><label for="sNum">配送数量</label> <input id="sNum" type="text" required="" name="sBackNum" /></li>
+                    </ul>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="sureAdd">确定配送</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/portal/jquery 1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/portal/sending.js"></script>
+<script type="text/javascript" src="../js/portal/bootstrap.min.js"></script>
+<script src="../js/portal/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="../js/portal/bootstrap-table-zh-CN.js"></script>
+</body>
+</html>

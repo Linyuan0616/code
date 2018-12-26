@@ -1,0 +1,25 @@
+<link href="/js/kindeditor-4.1.10/themes/default/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/sending-edit.js"></script>
+
+<table class="easyui-datagrid" id="sendingList" title="商品列表"
+       data-options="singleSelect:false,collapsible:true,pagination:true,url:'/sending/list',method:'get',pageSize:30,toolbar:toolbar1">
+    <thead>
+    <tr>
+        <th data-options="field:'ck',checkbox:true"></th>
+        <th data-options="field:'sendingId',width:150">配送单ID</th>
+        <th data-options="field:'itemId',width:200">商品ID</th>
+        <th data-options="field:'num',width:70,align:'right'">配送数量</th>
+        <th data-options="field:'name',width:100">姓名</th>
+        <th data-options="field:'phone',width:100">电话</th>
+        <th data-options="field:'address',width:380">地址</th>
+        <th data-options="field:'status',width:60,align:'center',formatter:WATERMANAGER.formatSendingStatus">状态</th>
+    </tr>
+    </thead>
+</table>
+</body>
+
+<script>
+
+
+</script>

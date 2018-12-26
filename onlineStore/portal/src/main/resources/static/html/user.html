@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>店铺管理</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <style type="text/css">
+        button{
+            padding: 5px 15px;
+            line-height: 19px;
+            margin-left:  30px;
+        }
+        button.btnOn{
+            background: #7CA7D1;
+        }
+        #sAddShopInfoForm,#sAgencyInfoShowBox{
+            padding-top: 50px;
+        }
+        #showPic{
+            height: 50px;
+        }
+        #sGoodsTable img{
+            height: 30px;
+        }
+        /*自定义商品*/
+        #g_mySelfGoodsForm{
+            padding-top: 3%;
+        }
+        #g_mySelfGoodsType{
+            width: 270px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="bHeaderBox">
+        <div class="bHeader">
+            <h1>水 管 家</h1>
+            <div class="title2">
+                用 户 中 心
+            </div>
+            <div class="ExitBox">
+                <div class="exitText">
+                    退出登录
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainBox">
+        <div id="bNavBox">
+            <ul id="bNav1">
+                <li class="on"><a href="user.html" class="on">
+                    <div class="iconfont pic1"></div>
+                    <div class="text">
+                        资料管理
+                    </div></a></li>
+                <li><a href="item.html">
+                    <div class="iconfont pic2"></div>
+                    <div class="text">
+                        商品查看
+                    </div></a></li>
+                <li><a href="order.html">
+                    <div class="iconfont pic3"></div>
+                    <div class="text">
+                        订单管理
+                    </div></a></li>
+                <li><a href="sending.html">
+                    <div class="iconfont pic4"></div>
+                    <div class="text">
+                        配送管理
+                    </div></a></li>
+
+            </ul>
+            <div id="bNav2Box">
+                <ul id="bNav2">
+                    <li class="on">店铺资料</li>
+                    <li>地址管理</li>
+                </ul>
+            </div>
+        </div>
+        <div id="contentBox">
+            <div class="content">
+                <div id="sAgencyInfoShowBox" class="no">
+                    <form>
+                        <ul style="width: 350px;text-align: left;">
+                            <li class="picBox"><label for="licensePic">封面</label>
+                                <div class="pic">
+                                    <input name="flie" id="file0" />
+                                    <div class="sendPicc">
+                                        <img id="img0" src="../images/pic.png" />
+                                    </div>
+                                </div></li>
+
+                            <li><label for="sAddress">用户ID</label> <span id="sUserId"></span></li>
+                            <li><label for="sName">名称</label> <span id="sName"></span></li>
+                            <li><label for="sTel">电话</label> <span id="sTel"></span></li>
+                            <li><label for="sPerson">创建时间</label> <span id="sCreatTime"></span></li>
+                        </ul>
+                        <input type="button" id="sEditShopInfoBtn" class="Btn" value="编 辑" style="margin-top: 20px;" />
+                    </form>
+                </div>
+                <form class="no" enctype="multipart/form-data" id="sEditShopInfoForm" name="sEditShopInfoForm">
+                    <ul style="width: 350px;text-align: left;">
+                        <li class="picBox"><label for="licensePic">封面</label>
+                            <div class="pic">
+                                <input type="file" name="file" id="file0" />
+                                <div class="sendPicc">
+                                    <img id="img0" src="../images/pic.png" />
+                                </div>
+                            </div></li>
+                        <li><label for="sName">名称</label> <input id="sName" type="text" required="" name="sName" /></li>
+                        <li><label for="sTel">电话</label> <input id="sTel" type="text" required="" name="sTel" /></li>
+                        <li><label for="sPassword">密码</label> <input id="sPassword" type="password" required="" name="sPassword" /></li>
+                        <li><label for="sPassword">确认密码</label> <input id="sRPassword" type="password" required="" name="sRPassword" /></li>
+                    </ul>
+                    <button type="submit" id="sEditShopInfoSubmitBtn" class="Btn" value="确 定" style="margin-top: 20px;">确定</button>
+                </form>
+            </div>
+            <div class="content no" id="contentTable">
+                <table class="table table-bordered table-hover" id="sGoodsTable"></table>
+            </div>
+            <div class="content no" style="overflow-y: scroll;">
+                <table class="table table-bordered table-hover" id="sPolicyTable"></table>
+            </div>
+            <div class="content no">
+                <form enctype="multipart/form-data" id="g_mySelfGoodsForm" name="g_mySelfGoodsForm">
+                    <ul style="width: 350px;text-align: left;">
+                        <li class="picBox"><label for="g_mySelfGoodsPic">商品图片</label>
+                            <div class="pic">
+                                <input type="file" name="file" id="file0" />
+                                <div class="sendPicc">
+                                    <img id="img0" src="../images/pic.png" />
+                                </div>
+                            </div></li>
+                        <li><label for="g_mySelfGoodsName">商品名称</label> <input id="g_mySelfGoodsName" type="text" required="" name="g_mySelfGoodsName" /></li>
+                        <li><label for="g_mySelfGoodsSize">商品规格</label> <input id="g_mySelfGoodsSize" type="text" required="" name="g_mySelfGoodsSize" /></li>
+                        <li><label for="g_mySelfGoodsType">商品类型</label><select id="g_mySelfGoodsType"><option>水</option><option>空桶</option><option>其他</option></select></li>
+                        <li><label for="g_mySelfGoodsNum">商品数量</label> <input id="g_mySelfGoodsNum" type="text" required="" name="g_mySelfGoodsNum" /></li>
+                        <li><label for="g_mySelfGoodsSale">售价</label> <input id="g_mySelfGoodsSale" type="text" required="" name="g_mySelfGoodsSale" /></li>
+                        <li><label for="g_mySelfGoodsInPrice">进货价</label> <input id="g_mySelfGoodsInPrice" type="text" required="" name="g_mySelfGoodsInPrice" /></li>
+                    </ul>
+                    <button type="submit" id="g_mySelfGoodsBtn" class="Btn" value="确 定" style="margin-top: 20px;">确定</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">新增优惠政策</h4>
+            </div>
+            <div class="modal-body">
+                <form id="sAddPolicyModel">
+                    <ul style="width: 350px;text-align: left;">
+                        <li class="goodsName"></li>
+                        <li><label>购买数量满</label> <input id="buyNum" type="text" /></li>
+                        <li><label>赠送数量</label> <input id="sendNum" type="text" /></li>
+                    </ul>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="sureAddPolicyBtn">确定新增</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="setPolicyModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">配置优惠政策</h4>
+            </div>
+            <div class="modal-body">
+                <p class="currentGoods"></p>
+                <table class="table table-bordered" id="sLookPolicyTable"></table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/portal/jquery 1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/portal/shop.js"></script>
+<script type="text/javascript" src="../js/portal/bootstrap.min.js"></script>
+</body>
+</html>

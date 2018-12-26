@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>销售仓管</title>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-table.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/lyz.calendar.css" />
+	<style type="text/css">
+		.time{
+			line-height: 32px;
+			float: left;
+			position: relative;
+			margin-bottom: 20px ;
+		}
+		#txtBeginDate,#txtEndDate{
+			width: 125px;
+			height: 25px;
+			border-radius: 5px;
+			border: 1px solid #7a7a7a;
+			text-align: center;
+			cursor: pointer;
+		}
+		.tabD tr:first-child{
+			background: #7CA7D1;
+			color: #fff;
+		}
+		/*调整时间筛选的位置*/
+		#divDate{
+			top: 30px;
+			left: 38px;
+		}
+		#divEndDate{
+			top: 30px;
+			left: 188px;
+		}
+		.content{
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+<div class="wrap">
+	<div class="bHeaderBox">
+		<div class="bHeader">
+			<h1>水 管 家</h1>
+			<div class="title2">
+				用 户 中 心
+			</div>
+			<div class="ExitBox">
+				<div class="exitText">
+					退出登录
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mainBox">
+		<div id="bNavBox">
+			<ul id="bNav1">
+				<li><a href="user.html">
+					<div class="iconfont pic1"></div>
+					<div class="text">
+						店铺管理
+					</div></a></li>
+				<li><a href="item.html">
+					<div class="iconfont pic2"></div>
+					<div class="text">
+						客户管理
+					</div></a></li>
+				<li><a href="order.html">
+					<div class="iconfont pic3"></div>
+					<div class="text">
+						采购管理
+					</div></a></li>
+				<li><a href="sending.html">
+					<div class="iconfont pic4"></div>
+					<div class="text">
+						配送管理
+					</div></a></li>
+				<li class="on"><a href="saling.html" class="on">
+					<div class="iconfont pic6"></div>
+					<div class="text">
+						销售仓管
+					</div></a></li>
+			</ul>
+			<div id="bNav2Box">
+				<ul id="bNav2">
+					<li class="on">销售分析</li>
+					<li>进货订单</li>
+					<li>实时库存</li>
+				</ul>
+			</div>
+		</div>
+		<div id="contentBox" class="salingBox">
+			<div class="content">
+				<div class="time">
+					<span>时间筛选：</span>
+					<input id="txtBeginDate" placeholder="点击选择时间" />
+					<span>至</span>
+					<input id="txtEndDate" placeholder="点击选择时间" />
+					<button class="Btn" value="搜索" style="background: #7CA7D1" id="sSearchSalingAnalysisBtn">搜索</button>
+				</div>
+				<table id="salingAnalysis"></table>
+			</div>
+			<div class="content no">
+				<table id="sInStoreOrder"></table>
+			</div>
+			<div class="content no">
+				<table id="sRealStore"></table>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="sLookGoodsListModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">商品清单</h4>
+			</div>
+			<div class="modal-body">
+				<table class="table table-bordered" id="sGoodsList"></table>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="../js/portal/jquery 1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/portal/saling.js"></script>
+<script type="text/javascript" src="../js/portal/bootstrap.min.js"></script>
+<script src="../js/portal/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="../js/portal/bootstrap-table-zh-CN.js"></script>
+<script type="text/javascript" src="../js/portal/lyz.calendar.min.js"></script>
+</body>
+</html>

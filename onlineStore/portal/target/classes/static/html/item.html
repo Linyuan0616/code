@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>客户管理</title>
+	<link rel=stylesheet href=../css/common.css>
+	<link rel=stylesheet type=text/css href=../css/bootstrap.min.css>
+	<link rel=stylesheet type=text/css href=../css/bootstrap-table.min.css>
+	<style type=text/css>
+		button {
+			padding: 5px 15px;
+			line-height: 19px;
+			margin-left: 30px;
+		}
+
+		button.btnOn {
+			background: #7CA7D1;
+		}
+
+		#sAddShopInfoForm,#sAgencyInfoShowBox {
+			padding-top: 50px;
+		}
+
+		#showPic {
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+<div class=wrap>
+	<div class=bHeaderBox>
+		<div class=bHeader>
+			<h1>水 管 家</h1>
+			<div class=title2>用 户 中 心</div>
+			<div class=ExitBox>
+				<div class=exitText>退出登录</div>
+			</div>
+		</div>
+	</div>
+	<div class=mainBox>
+		<div id=bNavBox>
+			<ul id=bNav1>
+				<li>
+					<a href=user.html>
+						<div class="iconfont pic1"></div>
+						<div class=text>资料管理</div>
+					</a>
+				</li>
+				<li class=on>
+					<a href=item.html class=on>
+						<div class="iconfont pic2"></div>
+						<div class=text>商品查看</div>
+					</a>
+				</li>
+				<li>
+					<a href=order.html>
+						<div class="iconfont pic3"></div>
+						<div class=text>订单管理</div>
+					</a>
+				</li>
+				<li>
+					<a href=sending.html>
+						<div class="iconfont pic4"></div>
+						<div class=text>配送管理</div>
+					</a>
+				</li>
+
+			</ul>
+
+		</div>
+		<div id=contentBox>
+			<div class="content">
+				<table id="pOrderTable"></table>
+			</div>
+			<!--<div class="content no">-->
+				<!--<table id="pFamilyTable"></table>-->
+			<!--</div>-->
+			<!--<div class="content no">-->
+				<!--<table id="purchaseRecordTable"></table>-->
+			<!--</div>-->
+		</div>
+	</div>
+</div>
+<div class="modal fade" id=cLookDepositModel tabindex=-1 role=dialog aria-labelledby=myModalLabel aria-hidden=true>
+	<div class=modal-dialog>
+		<div class=modal-content>
+			<div class=modal-header>
+				<button type=button class=close data-dismiss=modal aria-hidden=true>&times;</button>
+				<h4 class=modal-title id=myModalLabel>押金</h4>
+			</div>
+			<div class=modal-body>
+				<form id=cLookDepositDetailForm>
+					<ul style="width: 350px;text-align: left;">
+						<li>sdfa :sdf</li>
+					</ul>
+				</form>
+			</div>
+			<div class=modal-footer>
+				<button type=button class="btn btn-default" data-dismiss=modal>关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script type=text/javascript src="../js/portal/jquery 1.9.1.min.js"></script>
+<script type=text/javascript src=../js/portal/customer.js></script>
+<script type=text/javascript src=../js/portal/bootstrap.min.js></script>
+<script src=../js/portal/bootstrap-table.min.js></script>
+<script type=text/javascript src=../js/portal/bootstrap-table-zh-CN.js></script>
+</body>
+</html>

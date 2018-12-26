@@ -1,0 +1,404 @@
+#bNavBox #bNav1 li,form,table {
+    text-align: center
+}
+
+#bNavBox #bNav1 li,.pic,.sendPicc img {
+    vertical-align: middle
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Microsoft YaHei"
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+    min-height: 450px
+}
+
+ul li {
+    list-style: none
+}
+
+.no {
+    display: none
+}
+
+.not-allow {
+    cursor: not-allowed;
+    background: #c0d5e3
+}
+
+.wrap {
+    max-width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    overflow-y: scroll
+}
+
+.bHeaderBox {
+    background: #a4c9e4;
+    width: 100%;
+    height: 70px
+}
+
+.bHeader {
+    width: 93%;
+    /*! min-width: 1230px; */
+    color: #fff;
+    line-height: 70px;
+    overflow: hidden
+}
+
+.bHeader h1 {
+    font-weight: 400;
+    float: left;
+    margin-right: 30px;
+    font-size: 30px
+}
+
+.bHeader .title2 {
+    font-size: 20px;
+    float: left
+}
+
+.bHeaderBox .ExitBox {
+    float: right;
+    cursor: pointer
+}
+
+.bHeaderBox .ExitBox .exitPic {
+    width: 30px;
+    float: left
+}
+
+.bHeaderBox .ExitBox .exitPic:before {
+    content: "\e608";
+    color: #fff;
+    font-size: 30px;
+    float: left
+}
+
+.bHeaderBox .ExitBox .exitText:hover {
+    text-decoration: underline
+}
+
+.mainBox {
+    width: 100%;
+    position: relative
+}
+
+#bNavBox {
+   /*width: 250px;*/
+    /*! height: 100%; */
+    /*! float: left; */
+    background: #e5e5e5;
+    position: absolute;
+    left: 0;
+    top: -20px
+}
+
+.pic,form ul li {
+    position: relative
+}
+
+#bNavBox #bNav1 {
+    width: 125px;
+    /*! min-width: 60px; */
+    float: left;
+    height: 100%
+}
+
+#bNavBox #bNav1 li {
+    background: #82a8d4;
+    border-bottom: 1px solid #eee
+}
+
+#bNavBox #bNav1 li.on,#bNavBox #bNav1 li:hover {
+    background: #fff
+}
+
+#bNavBox #bNav1 li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 59.5px
+}
+
+.pic,.sendPicc,form ul li label {
+    display: inline-block
+}
+
+#bNavBox #bNav1 li a.on,#bNavBox #bNav1 li a:hover {
+    color: #82a8d4
+}
+
+#bNavBox #bNav1 li .pic {
+    font-size: 29px;
+    padding-top: 10px
+}
+
+#bNavBox #bNav1 li .text {
+    font-size: 12px;
+    /*! padding-bottom: 5px; */
+    line-height: 20px;
+    display: inline-block
+}
+
+#bNavBox #bNav2Box {
+    width: 100px;
+    /*! background: #e5e5e5; */
+    float: left;
+    padding: 10px 12px 0
+}
+
+#bNavBox #bNav2Box #bNav2 li {
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer
+}
+
+#bNavBox #bNav2Box #bNav2 li.on,#bNavBox #bNav2Box #bNav2 li:hover {
+    color: #fff;
+    background: #82a8d4;
+    border-radius: 5px
+}
+
+#bNavBox #bNav2Boxx {
+    width: 568px
+}
+
+@font-face {
+    font-family: iconfont;
+    src: url(icon/iconfont.eot?t=1494658976222);
+    src: url(icon/iconfont.eot?t=1494658976222#iefix) format('embedded-opentype'),url(icon/iconfont.woff?t=1494658976222) format('woff'),url(icon/iconfont.ttf?t=1494658976222) format('truetype'),url(icon/iconfont.svg?t=1494658976222#iconfont) format('svg')
+}
+
+.iconfont {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+#bNavBox ul li .pic1:before {
+    content: "\e621";
+    font-size: 30px
+}
+
+#bNavBox ul li .pic2:before {
+    content: "\e69d"
+}
+
+#bNavBox ul li .pic3:before {
+    content: "\e611"
+}
+
+#bNavBox ul li .pic4:before {
+    content: "\e61e";
+    font-size: 32px
+}
+
+#bNavBox ul li .pic5:before {
+    content: "\e63d"
+}
+
+#bNavBox ul li .pic6:before {
+    content: "\e637"
+}
+
+#bNavBox ul li .pic7:before {
+    content: "\e669"
+}
+
+#bNavBox ul li .iconfont {
+    font-size: 35px/*! padding-top: 15px; */ /*! display: inline-block; */
+}
+
+#contentBox {
+    /*! width: 77%; */
+    /*! float: left; */
+    margin-left: 250px
+}
+
+.content {
+    padding: 0 20px;
+    margin-top: 20px
+}
+
+table {
+    /*! margin: 25px auto; */
+    color: #343434/*! margin: 20px auto; */
+}
+
+table th {
+    /*! background: #f5f5f5; */
+}
+
+form {
+    /*! width: 450px; */
+}
+
+form ul li {
+    margin-bottom: 30px
+}
+
+form ul li label {
+    width: 70px;
+    text-align: left
+}
+
+form ul li input,form ul li select {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border: 1px solid #b9b9b9;
+    padding: 0 10px;
+    cursor: pointer
+}
+
+form ul li select {
+    width: 89px
+}
+
+select option {
+    padding: 2px 10px
+}
+
+form .Btn {
+    width: 150px;
+    max-width: 225px;
+    height: 35px;
+    cursor: pointer;
+    background: #a4c9e4;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border: none;
+    color: #fff/*! margin: 20px 0; */
+}
+
+.aback,.back,.pBackBtn,.pBackBtnT {
+    color: #7CA7D1;
+    width: 45px;
+    line-height: 30px;
+    margin-left: 0;
+    cursor: pointer
+}
+
+.picBox {
+    height: 60px;
+    margin-bottom: 45px
+}
+
+.pic {
+    width: 270px
+}
+
+.sendPicc {
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    top: -20px;
+    border-radius: 5px;
+    z-index: -1;
+    left: 0;
+    width: 150px;
+    height: 100px;
+    overflow: hidden
+}
+
+.sendPicc img {
+    padding: 0;
+    margin-top: 6%;
+    height: 100%
+}
+
+.sendPicc span {
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px
+}
+
+#file0 {
+    z-index: 1;
+    width: 70px;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    float: left;
+    height: 80px;
+    margin-left: 30px
+}
+
+button {
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px
+}
+
+.popup {
+    position: fixed;
+    z-index: 999;
+    background: rgba(0,0,0,.58);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.popup>div {
+    background: #fff;
+    margin: 45px auto;
+    width: 580px;
+    height: 500px;
+    overflow: auto;
+    padding: 10px 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 53px rgba(0,0,0,.15)
+}
+
+#checkBox,#noCheckBox {
+    width: 16px;
+    height: 16px;
+    display: inline-block
+}
+
+.popup img {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin: -268px -326px 0 0
+}
+
+#contentTable,.modal-body {
+    overflow-y: scroll
+}
+
+#noCheckBox {
+    background: url(../images/check.png) no-repeat
+}
+
+#checkBox {
+    background: url(../images/check.png) 0 -48px no-repeat
+}
+
+.edit {
+    background: #E4E1E1
+}

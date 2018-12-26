@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>采购管理</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-table.min.css" />
+</head>
+<body>
+<div class="wrap">
+    <div class="bHeaderBox">
+        <div class="bHeader">
+            <h1>水 管 家</h1>
+            <div class="title2">
+                用 户 中 心
+            </div>
+            <div class="ExitBox">
+                <div class="exitText">
+                    退出登录
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainBox">
+        <div id="bNavBox">
+            <ul id="bNav1">
+
+                <li>
+                    <a href=user.html>
+                        <div class="iconfont pic1"></div>
+                        <div class=text>资料管理</div>
+                    </a>
+                </li>
+                <li class=on>
+                    <a href=item.html class=on>
+                        <div class="iconfont pic2"></div>
+                        <div class=text>商品查看</div>
+                    </a>
+                </li>
+                <li>
+                    <a href=order.html>
+                        <div class="iconfont pic3"></div>
+                        <div class=text>订单管理</div>
+                    </a>
+                </li>
+                <li>
+                    <a href=sending.html>
+                        <div class="iconfont pic4"></div>
+                        <div class=text>配送管理</div>
+                    </a>
+                </li>
+            </ul>
+            <div id="bNav2Box">
+                <ul id="bNav2">
+                    <li class="on">未确认订单</li>
+                    <li>已确认订单</li>
+                </ul>
+            </div>
+        </div>
+        <div id="contentBox">
+            <div class="content">
+                <table id="pUnOrderTable"></table>
+            </div>
+            <div class="content no">
+                <table id="pOrderTable"></table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/portal/jquery 1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/portal/purchase.js"></script>
+<script type="text/javascript" src="../js/portal/bootstrap.min.js"></script>
+<script src="../js/portal/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="../js/portal/bootstrap-table-zh-CN.js"></script>
+</body>
+</html>
